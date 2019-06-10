@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>Call Queue - Vonage Worflow</title>
+        <link rel="icon" href="../v/unnamed (1).png" type="image/x-icon"/>
+        <link rel="shortcut icon" href="../v/unnamed (1).png" type="image/x-icon"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../boot/js/jquery-3.1.1.min.js"></script>
+        <script src="../boot/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../boot/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="../boot/css/estilos.css" >
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <script src="../boot/js/particles.js"></script>
+        <script src="../boot/js/particulas.js"></script>
+        <nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="../v/unnamed (1).png" class="logo" width="50" height="50" alt="">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="icon-leaf-1 nav-link font-weight-bold" href="../index.html">Vonage Tech Worflow<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item font-weight-bold">
+                        <a class="icon-users nav-link"onclick="login();
+                                escondernuevousuario();
+                                escondercontactomail();" id="ini"
+                           >Tech Notes</a>
+                    </li>
+                    <li class="icon-user-add nav-item font-weight-bold">
+                        <a class="nav-link" onclick="nuevousuario();
+                                esconderlogin();
+                                escondercontactomail();" id="ereg" href="escalationtemplate.html">Escalation Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-network" target="_blank" id="inic" href="<?php echo $urlblog ?>"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-info-outline" target="_blank" href="<?php echo $urlguia ?>"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-hammer" id="tns" target="_blank" href="<?php echo $urltns ?>"></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" disabled>
+                    <button  class="btn btn-outline-success my-2 my-sm-0" type="submit" disabled>Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container" style="background-color: white;">
+            <div class="">
+                <script>
+
+                    function Audioissues() {
+                        comentarios = document.getElementById("comentsmaker");
+                        comentarios.value += '\From DID:\n\To DID:\n\SIP Trace:\n\XML Call Log (required Download Zip of Log):\n\Treatment of Call (Result) for example, Post Dial Delay, Dead Air, IVR, etc.\n\Steps to Reproduce:\n\Reproducible On-Site (y/n?):\n\Behavior: Detailed description of the Audio Issue, for example, Always Occurs or Intermittently Occurs\n\Cluster Info:\n\
+\nAre you able to reproduce from your current location using wired/softphone?:\n\
+';
+                    }
+
+                </script>
+
+
+            </div>
+            <div class="row">
+                <div class="col-8 p-5">
+                    <h1 class="text-center">Call Queue troubleshooting</h1>
+                    <div class="row">
+                        <div onclick="Audioissues()" class="col-12 trou1 " >
+                            <h3>Step 1</h3>
+                            <p>Call the extension directly. If the call does not ring the extension, <a href="#">troubleshoot the extension.</a> If extension rings, confirm the extension has been configured properly.</p><p> Example: If the call queue is set to assign calls to agents based on tier, make sure the extension is in the right tier.
+
+                            <p >Manually log the agent out and then back into the queue and Check the Status.</p>
+
+                            <p>Delayed: The issue is probably with the internet connection.</p>
+
+                            <p>Available: Make a test call to see if issue resolved.</p>
+                        </div>
+
+                        <hr style="color: #0056b2;" size="10" width="100%"/>
+                        <div class="col-12 trou2">
+                            <h3>Step 2</h3>
+                            <p>Remove the extension from the Call Queue and save. Add the extension back into the Call Queue and save. Place a test call to see if issue resolved.</p><p> Go to the Directory to determine if problem is a stuck call.</p>
+                        </div>
+
+                        <hr style="color: #0056b2;" size="10" width="100%"/>
+                        <div class="col-12 trou3">
+                            <h3>Step 3</h3>
+                            <p>Proceed to rebuild the Call Queue.</p><p style="color: red">CAUTION: BEFORE PROCEEDING SAVE THE RECORDINGS AND THE SETTINGS THAT ARE CONFIGURED ON CALL QUEUE.</p><p> 
+
+                                Add a new Call Queue using HDAP and configure it with the simplest settings, proceed to save and test.</p><p>
+
+                                Were you able to save the new Call Queue?</p><p>
+
+                                No: Remove the new Call Group and report the issue to Sup/TL before escalating it. *How to escalate issue.</p><p>
+
+                                Yes: Configure the new Call Queue with the same settings as the original. Save and test.</p><p>
+                                Did this resolve the issue?</p><p>
+                                Yes: <a href="../index.html">Go main menu</a></p><p>
+                                No -> Remove the new Call Queue and report the issue to Sup/TL before escalating it.<a href="#">*How to escalate issue.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-12 justify-content-around text-center  mt-5 mb-5">
+                            <h2>Notes</h2>
+                            <textarea id="comentsmaker" class="col-12"
+                                      placeholder="✎ ✎ ✎ Click to automatically add the escalation ticket format needed :)" id="comentsmaker"></textarea>
+                        </div>
+                        <div class="col-12 mt-3 mb-3">
+                            <h2 class="">Links</h2>
+                            <div class="row justify-content-around text-center footertext"  style="text-decoration: none;color: #0078ac; font-size: 14px">
+                                <div class="col-2"><a target="_blank" href="https://ikb.vonage.net/app/Essentials"><img class="footerimg" src="../v/Essentials_logo.png"> <p  style="text-decoration: none;color: #0078ac; font-size: 14px">IKB</p></a></div>
+                                <div class="col-2"><a target="_blank" href="https://my.vonagebusiness.com"><img class="footerimg" src="../v/images%20(3).jpg"><p style="text-decoration: none;color: #0078ac; font-size: 14px"> HDAP</p></a></div>
+                                <div class="col-2"><a target="_blank" href="https://na79.salesforce.com/"><img class="footerimg" src="../v/logo_footer_salesforce.png"><p style="text-decoration: none;color: #0078ac; font-size: 14px">Salesforce</p></a></div>
+                            </div> 
+                            <div class="row justify-content-around text-center footertext" style="text-decoration: none;color: #0078ac; font-size: 14px">
+                                <div class="col-2"><a target="_blank" href="http://neosuppsite01.neo.vocalocity.com:8080"><img class="footerimg" src="../v/techtools.png"><p style="text-decoration: none;color: #0078ac; font-size: 14px">Tech Tools</p></a></div>
+                                <div class="col-2"><a target="_blank" href="https://fax.vonagebusiness.com/"><img class="footerimg" src="../v/Dedicated_Fax_line-d.png"><p style="text-decoration: none;color: #0078ac; font-size: 14px">Fax Portal</p></a></div>
+                                <div class="col-2"><a target="_blank" href="https://www.netxusa.com/index.php"><img class="footerimg" src="../v/NETX.JPG"><p style="text-decoration: none;color: #0078ac; font-size: 14px">Netxusa</p></a></div>
+                            </div> 
+                            <div class="row justify-content-around text-center footertext" style="text-decoration: none;color: #0078ac; font-size: 14px">
+                                <div class="col-2"><a target="_blank" href="https://www.numberingplans.com/?page=analysis&sub=phonenr"><img class="footerimg" src="../v/numberingplan.jpg"><p style="text-decoration: none;color: #0078ac; font-size: 14px">Numbering Plans</p></a></div>
+                                <div class="col-2"><a target="_blank" href="https://desktopconnect.vonagebusiness.com"><img class="footerimg" src="../v/unnamed.png"><p style="text-decoration: none;color: #0078ac; font-size: 14px">Desktop Connect</p></a></div>
+                                <div class="col-2"><a target="_blank" href="https://www.howtocallabroad.com/"><img class="footerimg" src="../v/callabroad.jpg"><p style="text-decoration: none;color: #0078ac; font-size: 14px">Call Abroad</p></a></div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h2>IKBs that may help</h2>
+                            <hr style="color: #0056b2;" size="10" width="100%"/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="tikb1">Fix Connectivity Issues</p>
+                                    <p class="tikb2">Your Vonage service depends on the Internet so an interruption can affect your phone service. Once you confirm your Internet service has been restored, reboot your devices to resolve connectivity issues. </p>
+                                    <a href="#"><p class="tikb3">https://businesssupport.vonage.com/articles/answer/General-Troubleshooting-Steps-25065</p></a>
+                                </div>                                                                   
+                            </div>   
+                            <hr style="color: #0056b2;" size="10" width="100%"/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="tikb1">Fix Connectivity Issues</p>
+                                    <p class="tikb2">Your Vonage service depends on the Internet so an interruption can affect your phone service. Once you confirm your Internet service has been restored, reboot your devices to resolve connectivity issues. </p>
+                                    <a href="#"><p class="tikb3">https://businesssupport.vonage.com/articles/answer/General-Troubleshooting-Steps-25065</p></a>
+                                </div>                                                                   
+                            </div>   
+                            <hr style="color: #0056b2;" size="10" width="100%"/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="tikb1">Fix Connectivity Issues</p>
+                                    <p class="tikb2">Your Vonage service depends on the Internet so an interruption can affect your phone service. Once you confirm your Internet service has been restored, reboot your devices to resolve connectivity issues. </p>
+                                    <a href="#"><p class="tikb3">https://businesssupport.vonage.com/articles/answer/General-Troubleshooting-Steps-25065</p></a>
+                                </div>                                                                   
+                            </div>   
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer><a href="automenu.html" class="botton_back">GO BACK</a></footer>
+    </body>
+</html>

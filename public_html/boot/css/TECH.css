@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-09-2018, 02:50:42 PM
+    Author     : MipcHP
+*/
+
+.imgcaja1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-size: cover;
+    height: 250px;
+    border-radius: 10px;
+}
+#techcomentarios{
+    position: fixed; bottom: 0px; height: 210px;z-index: 3;
+}
+
+#techcoments{
+    height: 100%;
+    padding: 20px;
+    font-family: raleway;
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px #0096d8;
+}
+
+.adtech{
+    font-size: 14px;
+    color: #0078ac;
+    
+}
+.cautiontech{
+    font-size: 10px;
+    color: #890404;
+}

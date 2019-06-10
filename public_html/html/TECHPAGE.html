@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Escalation template - Vonage Worflow</title>
+        <link rel="icon" href="../v/unnamed (1).png" type="image/x-icon"/>
+        <link rel="shortcut icon" href="../v/unnamed (1).png" type="image/x-icon"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../boot/js/jquery-3.1.1.min.js"></script>
+        <script src="../boot/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../boot/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="../boot/css/estilos.css" >
+        <link rel="stylesheet" href="../boot/css/TECH.css" >
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <script src="../boot/js/particles.js"></script>
+        <script src="../boot/js/particulas.js"></script>
+        <nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="../v/unnamed (1).png" class="logo" width="50" height="50" alt="">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="icon-leaf-1 nav-link font-weight-bold" href="../index.html">Vonage Tech Worflow<span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="icon-user-add nav-item font-weight-bold">
+                        <a class="nav-link" onclick="nuevousuario();
+                                esconderlogin();
+                                escondercontactomail();" id="ereg" href="escalationtemplate.html">Escalation Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-network" target="_blank" id="inic" href="<?php echo $urlblog ?>"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-info-outline" target="_blank" href="<?php echo $urlguia ?>"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-hammer" id="tns" target="_blank" href="<?php echo $urltns ?>"></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" disabled>
+                    <button  class="btn btn-outline-success my-2 my-sm-0" type="submit" disabled>Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container" style="background-color: white">
+            <div class="row caja1 ">
+                <div class="col-8 fotocaja1 ">
+                    <div class="row justify-content-around p-4">
+                        <h2 class="col-12 pt-2 pb-2">Add phone to an extension</h2>
+                        <div class="col-9 imgcaja1" style="background-image: url('../v/tech/yea2.JPG')"></div>
+                        <div class="col-9 imgcaja1" style="background-image: url('../v/tech/yea3.JPG')"></div>     
+                        <div class="col-6 justify-content-around p-3" id="techcomentarios">
+                            <textarea class="col-12" id="techcoments" placeholder="✎ ✎ ✎ Click to automatically add the escalation ticket format needed :)" id="comentsmaker"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 textcaja1 trou1">
+                    <p class="adtech">*Before proceeding, make sure phone has the Ethernet cable connected to the LAN/SW/Internet port and is getting IP address. Furthermore, get the customer's network devices. Based on <a href="#">Network Compatibility list</a> verify if router is compatible , if not educate customer about the issue; however, as an extra mile you will change settings on the router that could be interfering with the services.*</p>                    
+                    <p>1) Sign in to your Online Account. </p>
+                    <p>2) 2) Click My Extensions icon on the home page. Alternately, click the Phone System icon at the top of the page, and Extensions in the left navigation pane.</p>
+                    <p>3) Click the extension you want to assign to a phone.</p>
+                    <p>4) Scroll to the bottom of the page, and click Devices to expand the section.</p>
+                    <p>5) Select Register Another Device.</p>
+                    <p>6) Check Active box.</p>
+                    <p>7) Select the correct Provisioning Model and enter the MAC Address.</p>
+                    <p>8) Click Save.</p>
+                    <p>9) Click Save at the top or bottom right side of the page.</p>
+                    <p>10) Scroll to the bottom of the page and click Devices again to expand the section and see the device you just registered.</p>
+                    <p>11) Click the here link. You will see a pop-up that says Reset Device Successful.</p>
+                    <p>12) Proceed to Factory Reset the Phone.</p>
+                </div>
+            <hr style="color: #0056b2;" size="10" width="100%"/>
+            <div class="row caja1 ">
+                <div class="col-8 fotocaja1 ">
+                    <div class="row justify-content-around p-4">
+                        <h2 class="col-12 pt-2 pb-2">Factory Reset</h2>
+                        <div class="col-9 imgcaja1" style="background-image: url('../v/tech/yea1.JPG')"></div>
+                        <div class="col-9 imgcaja1" style="background-image: url('../v/tech/yea4.JPG')"></div>
+                    </div>
+                </div>
+                <div class="col-4 textcaja1 trou2">
+                    <p class="adtech">*If passwords don't work, press and hold the speaker button, unplug and plug back in phone, release speaker button, unplug and plug phone.</p>
+                    <p class="cautiontech">All Phones with the Exception of Wireless Model (W52P DECT)</p>
+                    <h4>From the WEB User Interface (UI)</h4>
+                    <p>1) Press the OK button on the front of the phone to acquire the phone’s IP address.</p>
+                    <p>2) Input the IP address into any web browser and press enter.</p>
+                    <p>3) Enter the username and password.</p>
+                    <p>4) Username: admin</p>
+                    <p>5) Password: admin or your Vonage Business account number.</p>
+                    <p>6) Select Settings from the top menu, then Upgrade from the left navigation pane.</p>
+                    <p>7) Click Reset to Factory Setting.</p>
+                    <p>8) Click OK in the pop-up window to complete the factory reset.</p>
+                    <h4>From the phone</h4>
+                    <p>1) Press and hold the OK key on the face of the phone for 10 seconds.</p>
+                    <p>2) Press OK again to confirm. The phone will prompt you for a username and password.</p>
+                    <p>3) Press the down arrow key and enter your password.</p>
+                    <p>4) Username: admin</p>
+                    <p>5) Password: admin or your Vonage Business account number.</p>
+                    <p>8) Select OK.</p>
+                </div>
+            </div>
+            <hr style="color: #0056b2;" size="10" width="100%"/>
+            <div class="row caja1 ">
+                <div class="col-8 fotocaja1 ">
+                    <div class="row justify-content-around p-4">
+                        <h2 class="col-12 pt-2 pb-2">Factory Reset</h2>
+                        <div class="col-9 imgcaja1" style="background-image: url('../v/tech/yea1.JPG')"></div>
+                        <div class="col-9 imgcaja1" style="background-image: url('../v/tech/yea4.JPG')"></div>
+                    </div>
+                </div>
+                <div class="col-4 textcaja1 trou3">
+                    <p class="adtech">*If passwords don't work, press and hold the speaker button, unplug and plug back in phone, release speaker button, unplug and plug phone.</p>
+                    <p class="cautiontech">All Phones with the Exception of Wireless Model (W52P DECT)</p>
+                    <h4>From the WEB User Interface (UI)</h4>
+                    <p>1) Press the OK button on the front of the phone to acquire the phone’s IP address.</p>
+                    <p>2) Input the IP address into any web browser and press enter.</p>
+                    <p>3) Enter the username and password.</p>
+                    <p>4) Username: admin</p>
+                    <p>5) Password: admin or your Vonage Business account number.</p>
+                    <p>6) Select Settings from the top menu, then Upgrade from the left navigation pane.</p>
+                    <p>7) Click Reset to Factory Setting.</p>
+                    <p>8) Click OK in the pop-up window to complete the factory reset.</p>
+                    <h4>From the phone</h4>
+                    <p>1) Press and hold the OK key on the face of the phone for 10 seconds.</p>
+                    <p>2) Press OK again to confirm. The phone will prompt you for a username and password.</p>
+                    <p>3) Press the down arrow key and enter your password.</p>
+                    <p>4) Username: admin</p>
+                    <p>5) Password: admin or your Vonage Business account number.</p>
+                    <p>8) Select OK.</p>
+                </div>
+            </div>
+            <hr style="color: #0056b2;" size="10" width="100%"/>
+            
+            
+           
+        </div>
+    </body>
+</html>

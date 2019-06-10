@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Vonage Worflow</title>
+        <link rel="icon" href="v/unnamed (1).png" type="image/x-icon"/>
+        <link rel="shortcut icon" href="v/unnamed (1).png" type="image/x-icon"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="boot/js/jquery-3.1.1.min.js"></script>
+        <script src="boot/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="boot/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="boot/css/estilos.css">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <script src="boot/js/particles.js"></script>
+        <script src="boot/js/particulas.js"></script>
+        <div class="container-fluid">
+
+            <nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img src="v/unnamed (1).png" class="logo" width="50" height="50" alt="">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="icon-leaf-1 nav-link font-weight-bold" href="#">Vonage Tech Worflow<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item font-weight-bold">
+                            <a class="icon-users nav-link"onclick="login();
+                                    escondernuevousuario();
+                                    escondercontactomail();" id="ini"
+                               >Tech Notes</a>
+                        </li>
+                        <li class="icon-user-add nav-item font-weight-bold">
+                            <a class="nav-link" onclick="nuevousuario();
+                                    esconderlogin();
+                                    escondercontactomail();" id="ereg" href="html/escalationtemplate.html">Escalation Tickets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link icon-network" target="_blank" id="inic" href="<?php echo $urlblog ?>"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link icon-info-outline" target="_blank" href="<?php echo $urlguia ?>"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link icon-hammer" id="tns" target="_blank" href="<?php echo $urltns ?>"></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" disabled>
+                        <button  class="btn btn-outline-success my-2 my-sm-0" type="submit" disabled>Search</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <style>
+                    .te{
+                        font-size: 14px;
+                    }
+                </style>
+                <div class="col-sm-12 col-lg-12 col-md-12 pt-1 justify-content-center" style="
+                     background-color: #014563;
+                     background: linear-gradient(to right, #0078ac , #014563);
+                     color: white;">
+                    <p>Vonage Tech Workflow v1.0 © by Esteban Cardenas</p>
+                </div>
+                <div class="col-sm-12 col-lg-12 col-md-12 mt-0 pt-3 pb-1 justify-content-center" style="
+                     color: #FFF;
+                     background: #DF7401;
+                     background: linear-gradient(to right, #cc6600 , #ff9900);    
+                     border-radius: 5px;
+                     opacity: 0.85;
+                     ">
+                    <h4 class="font-weight-bold">Troubleshooting</h4>
+                </div>
+                <section class=" row mt-3 d-flex  justify-content-around font-weight-bold">
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 cardcolor pt-4 " style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/ext.JPG" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Extensions</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div> </div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/CG.JPG" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Call Group</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div> </div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/CQ.JPG" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Call Queue</p>
+                                <a href="html/Callqueue.html" class="btn btn-primary">►</a>
+                            </div> </div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/VR.JPG" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Virtual Receptionist</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/audio.png" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Audio Issues</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/gc.JPG" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Ghost Ringing</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/vm.JPG" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Voicemail</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/call.png" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Call Completion</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div> </div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/unexpected.png" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Unexpected Behaviors</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div> </div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/softphone.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Softphones</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div> </div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/fax.JPG" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Efax</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div> </div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/faxm.png" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Fax</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div> </div>
+                    </div>
+                </section>
+                <div class="col-sm-12 col-lg-12 col-md-12 mt-3 pt-3 pb-1 justify-content-center" style="
+                     color: #FFF;
+                     background: #DF7401;
+                     background: linear-gradient(to right, #cc6600 , #ff9900);    
+                     border-radius: 5px;
+                     opacity: 0.85;
+                     ">
+                    <h4 class="font-weight-bold">Auto Provisioning</h4>
+                </div>
+                <section class=" row m-3  d-flex justify-content-around font-weight-bold">
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem; border-radius: 10%;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/aastra.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Aastra</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/CISCO525.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Cisco 525</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div> </div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/CISCOSPA.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Cisco SPA</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/CISCOATA.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Cisco ATA</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/GXP1400_left.png" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Grandstream</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+                </section>
+                <section class=" row m-3  d-flex justify-content-around font-weight-bold">
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/linksys.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Linksys</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/polycom_soundpoint-321_poe.png" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Polycom SoundIP</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/vvx-300-series-s4b-enus.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Polycom VVX</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/panasonic.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Panasonic</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/yealink_t48g_desktop_phone_2__1.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Yealink</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+                </section>
+                <div class="col-sm-12 col-lg-12 col-md-12 mt-0 pt-3 pb-1 justify-content-center" style="
+                     color: #FFF;
+                     background: #DF7401;
+                     background: linear-gradient(to right, #cc6600 , #ff9900);                    
+                     opacity: 0.85;
+                     border-radius: 5px;
+                     opacity: 0.85;
+                     ">
+                    <h4 class="font-weight-bold">Manual Provisioning</h4>
+                </div>
+                <section class=" row m-3  d-flex justify-content-around font-weight-bold">
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem; border-radius: 10%;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/aastra.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Aastra</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div>
+                        </div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/CISCO525.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Cisco</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/CISCOATA.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Cisco ATA</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div><div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/GXP1400_left.png" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Grandstream</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+
+                </section>
+                <section class=" row m-3  d-flex justify-content-around font-weight-bold">
+
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/grandstreamata.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Grandstream ATA</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/vvx-300-series-s4b-enus.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Polycom</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/panasonic.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Panasonic</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+                    <div class=" card col-sm-12 col-lg-2 col-md-6 pt-4" style="width: 20rem;">
+                        <div class="colorback">
+                            <div class="row">
+                                <div class="col-12"><img class="card-img-top2" src="v/yealink_t48g_desktop_phone_2__1.jpg" alt="Card image cap"></div>
+                            </div><div class="card-block">
+                                <p class="te card-title">Yealink</p>
+                                <a href="#" class="btn btn-primary">►</a>
+                            </div></div>
+                    </div>
+
+                </section>
+
+                <section class="row mt-5 container-fluid d-flex">
+                    <div class="col-sm-12 col-lg-7 col-md-12 d-flex align-items-center" style="
+                         background-image: url('v/vonage-1.jpg');
+                         background-size: cover;
+                         ">
+
+                    </div>
+                    <div class="col-sm-12 col-lg-5 col-md-12 p-2">
+                        <div  class="row align-items-center justify-content-center">
+                            <div class=" card " style="width: 20rem;">
+                                <div class="colorback2">
+                                    <div class="row pt-4">
+                                        <div class="col-12" ><img class="card-img-top3" src="v/Customer-Service1.png"   alt="Card image cap"></div>
+                                    </div><div class="card-block">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere else :v</a>
+                                    </div> </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="col-sm-12 col-lg-12 col-md-12 pt-4 mt-5 text-center justify-content-around" style="
+                     background-color: #014563;
+                     background: linear-gradient(to right, #0078ac , #014563);
+                     color: white;
+                     opacity: 0.85
+                     ">
+                    <div class="row container-fluid justify-content-around footertext text-center  font-weight-bold">
+                        <div class="col-1"><a target="_blank" href="https://ikb.vonage.net/app/Essentials"><img class="footerimg" src="v/Essentials_logo.png"> <p>IKB</p></a></div>
+                        <div class="col-1"><a target="_blank" href="https://my.vonagebusiness.com"><img class="footerimg" src="v/images%20(3).jpg"><p> HDAP</p></a></div>
+                        <div class="col-1"><a target="_blank" href="https://na79.salesforce.com/"><img class="footerimg" src="v/logo_footer_salesforce.png"><p>Salesforce</p></a></div>
+                        <div class="col-1"><a target="_blank" href="http://neosuppsite01.neo.vocalocity.com:8080"><img class="footerimg" src="v/techtools.png"><p>Tech Tools</p></a></div>
+                        <div class="col-1"><a target="_blank" href="https://fax.vonagebusiness.com/"><img class="footerimg" src="v/Dedicated_Fax_line-d.png"><p>Fax Portal</p></a></div>
+                        <div class="col-1"><a target="_blank" href="https://www.netxusa.com/index.php"><img class="footerimg" src="v/NETX.JPG"><p>Netxusa</p></a></div>
+                        <div class="col-1"><a target="_blank" href="https://www.numberingplans.com/?page=analysis&sub=phonenr"><img class="footerimg" src="v/numberingplan.jpg"><p>Numbering Plans</p></a></div>
+                        <div class="col-1"><a target="_blank" href="https://desktopconnect.vonagebusiness.com"><img class="footerimg" src="v/unnamed.png"><p>DesktopConnect</p></a></div>
+                        <div class="col-1"><a target="_blank" href="https://www.howtocallabroad.com/"><img class="footerimg" src="v/callabroad.jpg"><p>Call Abroad</p></a></div>              
+                    </div>
+                </div>    
+
+            </div>
+        </div>
+       
+    </body>
+
+</html>

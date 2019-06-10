@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Escalation template - Vonage Worflow</title>
+        <link rel="icon" href="../v/unnamed (1).png" type="image/x-icon"/>
+        <link rel="shortcut icon" href="../v/unnamed (1).png" type="image/x-icon"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../boot/js/jquery-3.1.1.min.js"></script>
+        <script src="../boot/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../boot/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="../boot/css/estilos.css" >
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <script src="../boot/js/particles.js"></script>
+        <script src="../boot/js/particulas.js"></script>
+        <nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="../v/unnamed (1).png" class="logo" width="50" height="50" alt="">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="icon-leaf-1 nav-link font-weight-bold" href="../index.html">Vonage Tech Worflow<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item font-weight-bold">
+                        <a class="icon-users nav-link"onclick="login();
+                                escondernuevousuario();
+                                escondercontactomail();" id="ini"
+                           >Tech Notes</a>
+                    </li>
+                    <li class="icon-user-add nav-item font-weight-bold">
+                        <a class="nav-link" onclick="nuevousuario();
+                                esconderlogin();
+                                escondercontactomail();" id="ereg" href="escalationtemplate.html">Escalation Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-network" target="_blank" id="inic" href="<?php echo $urlblog ?>"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-info-outline" target="_blank" href="<?php echo $urlguia ?>"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-hammer" id="tns" target="_blank" href="<?php echo $urltns ?>"></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" disabled>
+                    <button  class="btn btn-outline-success my-2 my-sm-0" type="submit" disabled>Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <script>
+
+            function Audioissues() {
+                comentarios = document.getElementById("comentsmaker");
+                comentarios.value += '\nDate/Time:\n\From DID:\n\To DID:\n\SIP Trace:\n\XML Call Log (required Download Zip of Log):\n\Treatment of Call (Result) for example, Post Dial Delay, Dead Air, IVR, etc.\n\Steps to Reproduce:\n\Reproducible On-Site (y/n?):\n\Behavior: Detailed description of the Audio Issue, for example, Always Occurs or Intermittently Occurs\n\Cluster Info:\n\
+\nAre you able to reproduce from your current location using wired/softphone?:\n\
+';
+            }
+
+        </script>
+
+
+
+
+        <section class="container mt-5">
+            <h1 style="color: white">Escalation templates</h1>
+            <div class="row justify-content-around d-flex align-items-center">
+
+                <div class="col-3">
+                    <p class="botoesca" style="transition: 3s;" onclick="Audioissues()">Audio Issues</p>
+                    <p class="botoesca" style="transition: 3s;">Call completion</p>
+                    <p class="botoesca" style="transition: 3s;">Caller ID</p>
+                    <p class="botoesca" style="transition: 3s;">Features</p>
+
+                </div>
+                <div class="col-3">
+                    <p class="botoesca" style="transition: 3s;">HDAP</p>
+                    <p class="botoesca" style="transition: 3s;">Registration</p>
+                    <p class="botoesca" style="transition: 3s;">Vonage Business Cloud App Template</p>
+                    <p class="botoesca" style="transition: 3s;">Vonage DesktopConnect Template</p>
+
+                </div>
+                <div class="col-6">
+                    <textarea class="col-12" style="
+                              height: 400px;
+                              border-radius: 5px;
+                              padding: 40px;
+                              font-family: raleway;
+                              font-size: 12px;
+                              " placeholder="✎ ✎ ✎ Click to automatically add the escalation ticket format needed :)" id="comentsmaker"></textarea>
+                </div>
+            </div>
+
+
+        </section>
+        <footer><a href="../" class="botton_back">GO BACK</a></footer>
+    </body>
+</html>
